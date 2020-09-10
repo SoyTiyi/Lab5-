@@ -10,7 +10,7 @@
 
     ¿Qué otros código de error existen?, ¿En qué caso se manejarán?
 
-    ![TCP/IP](./Image/CodigoDeError.png)    
+    ![TCP/IP](./Image/CodigosDeError.png)    
 3. Realice una nueva conexión con telnet, esta vez a
     ![TCP/IP](./Image/httpbin.png)
 
