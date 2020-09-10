@@ -30,6 +30,7 @@
     ![TCP/IP](./Image/TiposDePeticiones.png)
 5. Curl 
     * Curl sin parametros
+
         ![TCP/IP](./Image/curl1.png)
     * Curl con parametro -v 
         ![TCP/IP](./Image/curl2.png)
