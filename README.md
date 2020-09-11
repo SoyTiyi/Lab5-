@@ -46,7 +46,9 @@
 ## Parte 2 
 
 1. Puerto TCP/IP de Tomcat 
+
     ![package](./Image/Puerto.png)
+
     1. mvn package
 
         ![tomcat](./Image/mvnpackage.png)
