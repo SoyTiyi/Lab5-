@@ -1,5 +1,7 @@
 # Lab5
 
+## Parte 1 
+
 1. Realice una cinexión sincrona TCP/IP a través de Telnet al siguiente servidor
     ![TCP/IP](./Image/Telnet1.png)
 
@@ -40,3 +42,9 @@
     * ¿Cual es la diferencia entre los parametros?
         1. Parametro i: Incluye el protocolo responsable en el output 
         2. Parametro v: Retorna el output con mas información 
+
+## Parte 2 
+
+1. Puerto TCP/IP de Tomcat 
+
+    ![TCP/IP](./Image/Puerto.png)
