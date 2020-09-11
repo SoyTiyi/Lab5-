@@ -1,0 +1,16 @@
+0:0:0:0:0:0:0:1 - - [10/Sep/2020:22:12:54 -0500] "GET / HTTP/1.1" 200 52 http-bio-8080-exec-1 1449
+0:0:0:0:0:0:0:1 - - [10/Sep/2020:22:12:55 -0500] "GET /favicon.ico HTTP/1.1" 404 973 http-bio-8080-exec-2 10
+0:0:0:0:0:0:0:1 - - [10/Sep/2020:22:13:58 -0500] "GET / HTTP/1.1" 200 93 http-bio-8080-exec-4 161
+0:0:0:0:0:0:0:1 - - [10/Sep/2020:22:13:58 -0500] "GET /favicon.ico HTTP/1.1" 404 973 http-bio-8080-exec-5 4
+0:0:0:0:0:0:0:1 - - [10/Sep/2020:22:14:34 -0500] "GET / HTTP/1.1" 200 52 http-bio-8080-exec-7 90
+0:0:0:0:0:0:0:1 - - [10/Sep/2020:22:14:34 -0500] "GET /favicon.ico HTTP/1.1" 404 973 http-bio-8080-exec-8 5
+0:0:0:0:0:0:0:1 - - [10/Sep/2020:22:17:14 -0500] "GET /helloServlet HTTP/1.1" 200 16 http-bio-8080-exec-10 9
+0:0:0:0:0:0:0:1 - - [10/Sep/2020:22:17:14 -0500] "GET /favicon.ico HTTP/1.1" 404 973 http-bio-8080-exec-10 2
+0:0:0:0:0:0:0:1 - - [10/Sep/2020:22:21:17 -0500] "GET /helloServlet?name=%22Santiago%22 HTTP/1.1" 200 27 http-bio-8080-exec-3 5
+0:0:0:0:0:0:0:1 - - [10/Sep/2020:22:21:37 -0500] "GET /helloServlet?name=Contreras HTTP/1.1" 200 25 http-bio-8080-exec-3 0
+0:0:0:0:0:0:0:1 - - [10/Sep/2020:22:21:37 -0500] "GET /favicon.ico HTTP/1.1" 404 973 http-bio-8080-exec-3 5
+0:0:0:0:0:0:0:1 - - [10/Sep/2020:22:21:44 -0500] "GET /helloServlet?name=%20Contreras HTTP/1.1" 200 27 http-bio-8080-exec-7 0
+0:0:0:0:0:0:0:1 - - [10/Sep/2020:22:21:44 -0500] "GET /favicon.ico HTTP/1.1" 404 973 http-bio-8080-exec-7 10
+0:0:0:0:0:0:0:1 - - [10/Sep/2020:22:22:10 -0500] "GET /helloServlet?name=%20Angi%20como%20estas%207u7? HTTP/1.1" 200 38 http-bio-8080-exec-1 0
+0:0:0:0:0:0:0:1 - - [10/Sep/2020:22:27:11 -0500] "GET /helloServlet?name=%20Contreras HTTP/1.1" 200 27 http-bio-8080-exec-2 5
+0:0:0:0:0:0:0:1 - - [10/Sep/2020:22:27:11 -0500] "GET /favicon.ico HTTP/1.1" 404 973 http-bio-8080-exec-2 10
