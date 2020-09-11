@@ -46,13 +46,14 @@
 ## Parte 2 
 
 1. Puerto TCP/IP de Tomcat 
+    ![package](./Image/Puerto.png)
     1. mvn package
 
-        ![package](./Image/Puerto.png)
+        ![tomcat](./Image/mvnpackage.png)
     
     2. mvn tomcat7:run
 
-        ![tomcat](./Image/mvnpackage.png)
+        ![tomcat](./Image/Tomcat.png)
 
 2. Abra un navegador y ponga la dirección con la cual se le enviarán las peticiones al SampleServer
 
