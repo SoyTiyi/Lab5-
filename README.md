@@ -68,27 +68,47 @@
 4. revise la direccion https://jsonplaceholder.typicode.com/todos/1. Intente cambiando diferentes números al final del path
 
     * Numero 1
+
         ![json1](./Image/json1.png)
+
     * Numero 30 
+
         ![json30](./Image/json30.png)
+
     * Numero 55
+
         ![json55](./Image/json55.png)
+
 5. Implementación de la nueva clase CustomServlet.java
+
     * id 1
+
         ![test1](./Image/test1Custom.png)
+
     * id 26
+
         ![test2](./Image/test2Custom.png)
+
     * NumberFormatException 
+
         ![test3](./Image/test3Custom.png)
+
     * FileNotFoundException
+
         ![test4](./Image/test4Custom.png)
     
 ## Parte 3
+
 1. Index.html
+
     ![html](./Image/index.png)
+
 2. Post
+
     ![post](./Image/examPost.png)
+
 3. Get
+
     ![get](./Image/examGet.png)
 
 La diferencia es que si utilizamos el metodo get lo que hace es poner ?id=2
