@@ -1,0 +1,41 @@
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Start Page</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    </head>
+    <script>
+        function validateForm() {
+            var x = document.forms["formulario"]["id"].value;
+            if (x != parseInt(x)) {
+                alert("Ingrese un numero valido");
+                return false;
+            }
+        }
+    </script>
+    <body>
+        <div style="background:#35A1E8 !important" class="jumbotron text-center">
+            <h1> Lab 5</h1>
+            <p>Skere</p>
+        </div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-sm-4">
+                    <form name="formulario" action="/customServlet" method="post">
+                        <div class="form-group">
+                            <label>userId</label>
+                            <br>
+                            <input type="text" class="form-control" name="id">
+                            <br>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
