@@ -64,6 +64,10 @@ public class BackenBean {
         return 0;
     }
 
+    public int calculareVariance(ArrayList<Integer> valores){
+        return 0;
+    }
+
     public void restar(){
         intentos = new ArrayList<>();
         numeroAdivinar = createNumeroAdivinar();
@@ -74,6 +78,24 @@ public class BackenBean {
         Random random = new Random();
         int nuevoNumeroAdivinar = random.nextInt(10);
         return nuevoNumeroAdivinar;
+    }
+
+    public int calculateMode(ArrayList<Integer> valores){
+        int maximoNumRepeticiones = 0;
+        int moda = 0;
+        for(int i=0; i<valores.size(); i++){
+            int numRepeticiones = 0;
+            for(int j=0; j<valores.size(); j++){
+                if(valores.get(i)==valores.get(j)){
+                    numRepeticiones++;
+                }
+                if(numRepeticiones>maximoNumRepeticiones){
+                    moda = valores.get(i);
+                    maximoNumRepeticiones = numRepeticiones;
+                }
+            }
+        }
+        return moda;
     }
     
 }
