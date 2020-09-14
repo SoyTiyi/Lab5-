@@ -101,11 +101,11 @@
 
 1. Index.html
 
-    ![html](./Image/index.png)
+    ![html](./Image/index1.png)
 
 2. Post
 
-    ![post](./Image/examPost.png)
+    ![post](./Image/examPost1.png)
 
 3. Get
 
