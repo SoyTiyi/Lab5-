@@ -1,0 +1,14 @@
+127.0.0.1 - - [14/Sep/2020:16:29:02 -0500] "GET / HTTP/1.1" 200 63 http-bio-8080-exec-1 1633
+127.0.0.1 - - [14/Sep/2020:16:29:02 -0500] "GET /favicon.ico HTTP/1.1" 404 973 http-bio-8080-exec-2 3
+127.0.0.1 - - [14/Sep/2020:16:29:11 -0500] "GET /faces/calculate.xhtml HTTP/1.1" 404 1067 http-bio-8080-exec-3 8
+127.0.0.1 - - [14/Sep/2020:16:29:12 -0500] "GET /favicon.ico HTTP/1.1" 404 973 http-bio-8080-exec-4 2
+127.0.0.1 - - [14/Sep/2020:16:29:28 -0500] "GET /faces/calculadora.xhtml HTTP/1.1" 500 4036 http-bio-8080-exec-6 146
+127.0.0.1 - - [14/Sep/2020:16:31:03 -0500] "GET /faces/calculadora.xhtml HTTP/1.1" 500 4024 http-bio-8080-exec-1 448
+127.0.0.1 - - [14/Sep/2020:16:31:49 -0500] "GET /faces/calculadora.xhtml HTTP/1.1" 500 6577 http-bio-8080-exec-1 841
+127.0.0.1 - - [14/Sep/2020:16:32:38 -0500] "GET /faces/calculadora.xhtml HTTP/1.1" 200 3076 http-bio-8080-exec-1 817
+127.0.0.1 - - [14/Sep/2020:16:32:38 -0500] "GET /faces/javax.faces.resource/theme.css?ln=primefaces-aristo HTTP/1.1" 200 24975 http-bio-8080-exec-2 61
+127.0.0.1 - - [14/Sep/2020:16:32:38 -0500] "GET /faces/javax.faces.resource/core.js?ln=primefaces&v=8.0 HTTP/1.1" 200 43146 http-bio-8080-exec-4 44
+127.0.0.1 - - [14/Sep/2020:16:32:38 -0500] "GET /faces/javax.faces.resource/jquery/jquery-plugins.js?ln=primefaces&v=8.0 HTTP/1.1" 200 267621 http-bio-8080-exec-7 66
+127.0.0.1 - - [14/Sep/2020:16:32:38 -0500] "GET /faces/javax.faces.resource/jquery/jquery.js?ln=primefaces&v=8.0 HTTP/1.1" 200 88237 http-bio-8080-exec-5 76
+127.0.0.1 - - [14/Sep/2020:16:32:38 -0500] "GET /faces/javax.faces.resource/components.js?ln=primefaces&v=8.0 HTTP/1.1" 200 435082 http-bio-8080-exec-6 93
+127.0.0.1 - - [14/Sep/2020:16:32:38 -0500] "GET /faces/javax.faces.resource/components.css?ln=primefaces&v=8.0 HTTP/1.1" 200 96157 http-bio-8080-exec-3 160
