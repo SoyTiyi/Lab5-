@@ -10,13 +10,50 @@ import javax.faces.bean.ManagedBean;
 @ApplicationScoped
 public class BackingBean {
     private int numeroAdivinar;
-    private ArrayList<Integer> intentos;
+    private ArrayList<Integer> valores;
     private int premioAcumulado;
     private String estado;
+    private int media;
+    private int desviacionEstandar;
+    private int varianza;
+    private int moda;
+
 
     /* This is the contructor of the class */
     public BackingBean(){
         restart();
+    }
+
+    public int getMedia(){
+        return media;
+    }
+
+    public int getDesviacionEstandar(){
+        return desviacionEstandar;
+    }
+
+    public int getVarianza(){
+        return varianza;
+    }
+
+    public int getModa(){
+        return moda;
+    }
+
+    public void setMedia(int media){
+        this.media=media;
+    }
+
+    public void setDesviacionEstandar(int desviacionEstandar){
+        this.desviacionEstandar=desviacionEstandar;
+    }
+
+    public void setVarianza(int varianza){
+        this.varianza=varianza;
+    }
+
+    public void setModa(int moda){
+        this.moda=moda;
     }
 
     /* This method set numeroAdivinar, is the number that the client have to know 
@@ -29,8 +66,8 @@ public class BackingBean {
     /* This method set Intentos, is the number of  releases in the game
      * @param intentos is a ArrayList of Integers
     */
-    public void setIntentos(ArrayList<Integer> intentos){
-        this.intentos=intentos;
+    public void setValores(ArrayList<Integer> valores){
+        this.valores=valores;
     }
 
     /* This method set premioAcumulado, is the value that the client have in the game
@@ -57,8 +94,8 @@ public class BackingBean {
     /* This method return the arrayList with the releases that the player did
      * @return intentos
     */
-    public ArrayList<Integer> getIntentos(){
-        return intentos;
+    public ArrayList<Integer> getValores(){
+        return valores;
     }
 
     /* This method return premioAcumulado
@@ -74,6 +111,24 @@ public class BackingBean {
     public String getEstado(){
         return estado;
     }
+    
+    public void calculate(String lista){
+        lista+=";";
+        String valor="";
+        for(int i=0;i<lista.length();i++){
+            if(lista.charAt(i)!=';'){
+                valor += lista.charAt(i)+"";
+            }
+            else {
+                valores.add(Integer.parseInt(valor));
+                valor="";
+            }
+        }
+        media=calculateMean(valores);
+        desviacionEstandar=calculateStandarDesviation(valores);
+        varianza=calculateVariance(valores);
+        moda=calculateMode(valores);
+    }
 
     public int calculateMean(ArrayList<Integer> valores){
         int result=0;
@@ -83,9 +138,9 @@ public class BackingBean {
         return result/valores.size();
     }
 
-    public int calculateStandarDeviation(ArrayList<Integer> valores){
+    public int calculateStandarDesviation(ArrayList<Integer> valores){
         int varianza = calculateVariance(valores);
-        return (int) Math.pow(varianza, 1/2);
+        return (int) Math.pow(varianza, 0.5);
     }
 
     public int calculateVariance(ArrayList<Integer> valores){
@@ -98,9 +153,12 @@ public class BackingBean {
     }
 
     public void restart(){
-        intentos = new ArrayList<>();
+        valores= new ArrayList<>();
         numeroAdivinar = createNumeroAdivinar();
-        estado = "Aun no haz ganado Bro!";
+        media=0;
+        desviacionEstandar=0;
+        varianza=0;
+        moda=0;
     }
 
     private int createNumeroAdivinar(){
@@ -118,7 +176,7 @@ public class BackingBean {
                 if(valores.get(i)==valores.get(j)){
                     numRepeticiones++;
                 }
-                if(numRepeticiones>maximoNumRepeticiones){
+                else if(numRepeticiones>maximoNumRepeticiones){
                     moda = valores.get(i);
                     maximoNumRepeticiones = numRepeticiones;
                 }

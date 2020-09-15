@@ -8,14 +8,25 @@
             <title>Document</title>
         </h:head>
         <h:body>
-            <h:form id="calculadora_form">
-                <p:outputLabel style="display: none;" value="#{calculadoraBean.numeroAdivinar}" />
-                
-                <p:inputText id="valores" type=""/>
-                <p:outputLabel style="display: none;" value="Operaciones:" />
-                <p:commandButton value="Send" update="calculadora_form"/>
-                
-                <p:commandButton value="Restart" update="calculadora_form" actionListener="#{calculadoraBean.restart}" />
-            </h:form>
+            <p:panel id="panel_principal" header="Calculadora">
+                <h:form id="calculadora_form">
+                    <h:panelGrid columns="2">
+                        <p:outputLabel value="Numero para adivinar:"/>
+                        <p:outputLabel id="numero" value="#{calculadoraBean.numeroAdivinar}"/>
+                        <p:outputLabel value="Lista:"/>
+                        <p:inputText id="valores" type="text" binding="#{input}"/>
+                        <p:outputLabel value="Media:"/>
+                        <p:outputLabel value="#{calculadoraBean.media}"/>
+                        <p:outputLabel value="Desviación Estandar:"/>
+                        <p:outputLabel value="#{calculadoraBean.desviacionEstandar}"/>
+                        <p:outputLabel value="Varianza:"/>
+                        <p:outputLabel value="#{calculadoraBean.varianza}"/>
+                        <p:outputLabel value="Moda:"/>
+                        <p:outputLabel value="#{calculadoraBean.moda}"/>
+                    </h:panelGrid>
+                </h:form>
+            </p:panel>
+            <p:commandButton value="Send" update="panel_principal" actionListener="#{calculadoraBean.calculate(input.value)}"/>
+            <p:commandButton value="Restart" update="panel_principal" actionListener="#{calculadoraBean.restart}"/>
         </h:body>
     </html>
