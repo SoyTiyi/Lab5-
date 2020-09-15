@@ -133,6 +133,9 @@ es decir, como enviarle el parametro id
     A simple vista no se nota alguna diferencia con el @SessionScoped y @ApplicationScoped
 
 3. Herramienta de desarrollador
+
     ![desarrollo](./Image/desarrollador.png)
 
+4. Lista de intentos
 
+    ![intentos](./Image/listaintentos.png)

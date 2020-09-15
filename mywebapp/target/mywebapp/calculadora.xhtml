@@ -1,7 +1,8 @@
     <!DOCTYPE html>
     <html xmlns="http://www.w3c.org/1999/xhtml"
             xmlns:h="http://xmlns.jcp.org/jsf/html"
-            xmlns:p="http://primefaces.org/ui">
+            xmlns:p="http://primefaces.org/ui"
+            xmlns:f="http://java.sun.com/jsf/core">
         <h:head>
             <meta charset="UTF-8" />
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,7 +13,7 @@
                 <h:form id="calculadora_form">
                     <h:panelGrid columns="2">
                         <p:outputLabel value="Numero para adivinar:"/>
-                        <p:outputLabel id="numero" value="#{calculadoraBean.numeroAdivinar}" style="display: none;">
+                        <p:outputLabel id="numero" value="#{calculadoraBean.numeroAdivinar}" style="display: none;" />
                         <p:outputLabel value="Lista:"/>
                         <p:inputText id="valores" type="text" binding="#{input}"/>
                         <p:outputLabel value="Media:"/>
@@ -24,6 +25,14 @@
                         <p:outputLabel value="Moda:"/>
                         <p:outputLabel value="#{calculadoraBean.moda}"/>
                     </h:panelGrid>
+                    <h:dataTable value="#{calculadoraBean.intentos}" var="intentos">
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="Intentos"/>
+                            </f:facet>
+                            <h:outputText value="#{intentos}"/>
+                        </h:column>
+                    </h:dataTable>
                 </h:form>
             </p:panel>
             <p:commandButton value="Send" update="panel_principal" actionListener="#{calculadoraBean.calculate(input.value)}"/>

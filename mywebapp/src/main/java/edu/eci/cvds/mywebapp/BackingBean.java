@@ -18,11 +18,20 @@ public class BackingBean {
     private int desviacionEstandar;
     private int varianza;
     private int moda;
+    private ArrayList<ArrayList<Integer>> intentos;
 
 
     /* This is the contructor of the class */
     public BackingBean(){
         restart();
+    }
+
+    public ArrayList<ArrayList<Integer>> getIntentos(){
+        return intentos;
+    }
+
+    public void setIntentos(ArrayList<ArrayList<Integer>> intentos){
+        this.intentos=intentos;
     }
 
     public int getMedia(){
@@ -114,6 +123,7 @@ public class BackingBean {
     }
     
     public void calculate(String lista){
+        valores = new ArrayList<Integer>();
         lista+=";";
         String valor="";
         for(int i=0;i<lista.length();i++){
@@ -125,6 +135,7 @@ public class BackingBean {
                 valor="";
             }
         }
+        intentos.add(valores);
         media=calculateMean(valores);
         desviacionEstandar=calculateStandarDesviation(valores);
         varianza=calculateVariance(valores);
@@ -160,6 +171,7 @@ public class BackingBean {
         desviacionEstandar=0;
         varianza=0;
         moda=0;
+        intentos = new ArrayList<ArrayList<Integer>>();
     }
 
     private int createNumeroAdivinar(){
