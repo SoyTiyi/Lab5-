@@ -113,3 +113,26 @@
 
 La diferencia es que si utilizamos el metodo get lo que hace es poner ?id=2
 es decir, como enviarle el parametro id
+
+## Parte 4 
+
+1. Implementación de calculadora.xhtml
+     
+    ![calculadora](./Image/calculadora.png)
+
+2. Abrir en dos navegadores 
+
+    * Firefox
+
+        ![firefox](./Image/firefox.png)
+
+    * Chrome 
+
+        ![Chrome](./Image/google.png)
+
+    A simple vista no se nota alguna diferencia con el @SessionScoped y @ApplicationScoped
+
+3. Herramienta de desarrollador
+    ![desarrollo](./Image/desarrollador.png)
+
+

@@ -12,7 +12,7 @@
                 <h:form id="calculadora_form">
                     <h:panelGrid columns="2">
                         <p:outputLabel value="Numero para adivinar:"/>
-                        <p:outputLabel id="numero" value="#{calculadoraBean.numeroAdivinar}"/>
+                        <p:outputLabel id="numero" value="#{calculadoraBean.numeroAdivinar}" style="display: none;">
                         <p:outputLabel value="Lista:"/>
                         <p:inputText id="valores" type="text" binding="#{input}"/>
                         <p:outputLabel value="Media:"/>
