@@ -83,3 +83,10 @@
 0:0:0:0:0:0:0:1 - - [15/Sep/2020:09:05:20 -0500] "POST /faces/calculadora.xhtml HTTP/1.1" 200 2667 http-bio-8080-exec-7 53
 0:0:0:0:0:0:0:1 - - [15/Sep/2020:09:05:36 -0500] "POST /faces/calculadora.xhtml HTTP/1.1" 200 258 http-bio-8080-exec-7 221
 0:0:0:0:0:0:0:1 - - [15/Sep/2020:09:05:58 -0500] "POST /faces/calculadora.xhtml HTTP/1.1" 200 2733 http-bio-8080-exec-5 18
+0:0:0:0:0:0:0:1 - - [15/Sep/2020:09:07:09 -0500] "GET /faces/calculadora.xhtml HTTP/1.1" 200 4413 http-bio-8080-exec-1 864
+0:0:0:0:0:0:0:1 - - [15/Sep/2020:09:07:09 -0500] "GET /faces/javax.faces.resource/components.js?ln=primefaces&v=7.0 HTTP/1.1" 304 - http-bio-8080-exec-4 20
+0:0:0:0:0:0:0:1 - - [15/Sep/2020:09:07:09 -0500] "GET /faces/javax.faces.resource/core.js?ln=primefaces&v=7.0 HTTP/1.1" 304 - http-bio-8080-exec-5 34
+0:0:0:0:0:0:0:1 - - [15/Sep/2020:09:07:09 -0500] "GET /faces/javax.faces.resource/jquery/jquery-plugins.js?ln=primefaces&v=7.0 HTTP/1.1" 304 - http-bio-8080-exec-3 33
+0:0:0:0:0:0:0:1 - - [15/Sep/2020:09:07:09 -0500] "GET /faces/javax.faces.resource/jquery/jquery.js?ln=primefaces&v=7.0 HTTP/1.1" 304 - http-bio-8080-exec-2 16
+0:0:0:0:0:0:0:1 - - [15/Sep/2020:09:07:13 -0500] "POST /faces/calculadora.xhtml HTTP/1.1" 200 2667 http-bio-8080-exec-9 42
+0:0:0:0:0:0:0:1 - - [15/Sep/2020:09:07:24 -0500] "POST /faces/calculadora.xhtml HTTP/1.1" 200 2708 http-bio-8080-exec-10 22
